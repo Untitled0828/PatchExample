@@ -5,6 +5,7 @@
 라이브러리 사용법
 
 Untitled.Reflection.dll 파일을 참조 추가하셔야합니다.
+BepInEx\plugins 폴더에도 넣어두시면됩니다.
 
 참고 링크
 
