@@ -96,8 +96,7 @@ public class WeaponMalfunctionPatch : Patch
     [PatchPostfix]
     private static void Patch(ref Weapon.EMalfunctionState __result)
     {
-        if (WeaponPatchPlugin.Enabled.Value)
-            __result = Weapon.EMalfunctionState.None;
+        __result = Weapon.EMalfunctionState.None;
     }
 }
 ```
