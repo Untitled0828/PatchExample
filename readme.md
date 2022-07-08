@@ -73,7 +73,7 @@ PatchAttribute(Type Class, Type parametertype, params string[] args)
 public PatchAttribute(bool parameteronly, params string[] args)
 // bool -> true, false 아무 값이나 넣으셔도 됩니다. (PatchAttribute(string Class, params string[] args) 구별용)
 // 오직 파라미터 이름만으로 함수를 찾습니다.
-// 클래스가 매번 업데이트때마나 이름이 변경되거나 이름이 변경되는 경우 사용할 수 있습니다.
+// 업데이트 때마다 Class, Method의 이름이 바뀔때 사용할 수 있습니다.
 // ex: [Patch(true, "bodyPart", "damage", "damageInfo")]
 ```
 
