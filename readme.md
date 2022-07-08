@@ -29,36 +29,38 @@ Harmony 라이브러리 docs링크입니다.
 ---
 
 ```c#
-public PatchAttribute(string Class, string Method)
+해당 
+
+PatchAttribute(string Class, string Method)
 // Class이름, Method이름을 통해 함수를 찾습니다.
 // ex: [Patch("FirearmController", "GetMalfunctionState"))]
 
-public PatchAttribute(string Class, string Method, Type[] parameters)
+PatchAttribute(string Class, string Method, Type[] parameters)
 // Class이름, Method이름, Type Parameters를 통해 함수를 찾습니다.
 // Profile.Examined 함수는 같은 이름으로 파라미터만 다르게 총 2개가 구현되어있으며 해당 함수중
 // 원하는걸 호출할때 사용합니다.
 // ex: [Patch("Profile", "Examined"), new[] { typeof(string) })]
 // ex: [Patch("Profile", "Examined"), new[] { typeof(Item) })]
 
-public PatchAttribute(string Class, params string[] args)
+PatchAttribute(string Class, params string[] args)
 // Class이름, 파라미터 이름을 통해 함수를 찾습니다.
 // ex: [Patch("Profile", "item")]
 // ex: [Patch("Profile", "templateId")]
 
-public PatchAttribute(string Class, Type parametertype, params string[] args)
+PatchAttribute(string Class, Type parametertype, params string[] args)
 // Class이름. 첫번째 파라미터 타입, 파라미터 이름을 통해 함수를 찾습니다.
 // ex: [Patch("Profile", typeof(string), "templateId")]
 
-public PatchAttribute(Type Class, string Method)
+PatchAttribute(Type Class, string Method)
 // Class타입, Method이름을 통해 함수를 찾습니다.
 // ex: [Patch(typeof(Profile), "Examined")]
 
-public PatchAttribute(Type Class, string Method, Type[] parameters)
+PatchAttribute(Type Class, string Method, Type[] parameters)
 // Class타입, Method이름, Type Parameters를 통해 함수를 찾습니다.
 // ex: [Patch(typeof(Profile), "Examined", new[] { typeof(string) })]
 // ex: [Patch(typeof(Profile), "Examined", new[] { typeof(Item) })]
 
-public PatchAttribute(Type Class, Type parametertype, params string[] args)
+PatchAttribute(Type Class, Type parametertype, params string[] args)
 // Class타입, 첫번째 파라미터 타입, 파라미터 이름을 통해 함수를 찾습니다.
 // args는 해당 함수의 파라미터 갯수만큼 이름을 넣어주셔야 합니다.
 // ex: [Patch(클래스타입, 파라미터1 타입, "파라미터1", "파라미터2")]
