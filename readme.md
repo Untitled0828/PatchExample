@@ -1,7 +1,5 @@
 # Untitled.Reflection
 
----
-
 라이브러리 사용법
 
 Untitled.Reflection.dll 파일을 참조 추가하셔야합니다.
@@ -75,9 +73,16 @@ public PatchAttribute(bool parameteronly, params string[] args)
 // ex: [Patch(true, "bodyPart", "damage", "damageInfo")]
 ```
 
+---
+
 ## Example Code
 
+오리지널 함수
+
+* ![img](./img/FirearmController.GetMalfunctionState.png)
+
 ```c#
+
 [BepInPlugin("com.Untitled.WeaponPatch", "WeaponPatch", "1.0.0")]
 [BepInDependency("com.Untitled.Reflection", BepInDependency.DependencyFlags.HardDependency)]
 public class WeaponPatchPlugin : PatchUnityPlugin
