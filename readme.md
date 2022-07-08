@@ -28,9 +28,11 @@ Harmony 라이브러리 docs링크입니다.
 
 ---
 
-```c#
-해당 
+## PatchAttribute Docs
 
+* 해당 Attribute 클래스의 사용법은 아래 [Example Code](#Example-Code) 에서 확인 할 수 있습니다.
+
+```c#
 PatchAttribute(string Class, string Method)
 // Class이름, Method이름을 통해 함수를 찾습니다.
 // ex: [Patch("FirearmController", "GetMalfunctionState"))]
