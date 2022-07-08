@@ -7,20 +7,28 @@
 Untitled.Reflection.dll 파일을 참조 추가하셔야합니다.
 BepInEx\plugins 폴더에도 넣어두시면됩니다.
 
-참고 링크
+---
+
+## Docs 링크
 
 BepinEx docs사이트 입니다.
 
 <https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/2_plugin_start.html>
 
-클아이언트 측 모드 기초 docs입니다.
+---
+
+클라이언트 사이드 모드 기초 docs입니다.
 
 <https://hub.sp-tarkov.com/doc/entry/47-tutorial-updating-old-pre-2-3-0-module-mods-to-the-new-plugin-system/>
+
+---
 
 Harmony 라이브러리 docs링크입니다.
 
 <https://harmony.pardeike.net/articles/intro.html>
 <https://dotnetcademy.net/Learn/4/Pages/2>
+
+---
 
 ```c#
 public PatchAttribute(string Class, string Method)
